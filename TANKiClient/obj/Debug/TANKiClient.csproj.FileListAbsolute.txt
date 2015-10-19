@@ -1,0 +1,9 @@
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\bin\Debug\TANKiClient.exe.config
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\bin\Debug\TANKiClient.exe
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\bin\Debug\TANKiClient.pdb
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.csprojResolveAssemblyReference.cache
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.Properties.Resources.resources
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.csproj.GenerateResource.Cache
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.exe
+c:\users\roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.pdb
+C:\Users\Roshan\documents\visual studio 2015\Projects\TANKiClient\TANKiClient\obj\Debug\TANKiClient.Game.resources
