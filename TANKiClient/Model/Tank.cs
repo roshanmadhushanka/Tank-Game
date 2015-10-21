@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace TANKiClient.Model
 {
-    class Tank
+    class Tank : GameObject
     {
+        public int direction { set; get; }
+        public bool shot { set; get; }
+        public int coin { set; get; }
+        public int points { set; get; }
 
     }
 }

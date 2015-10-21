@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,7 +54,13 @@
       <DependentUpon>Game.cs</DependentUpon>
     </Compile>
     <Compile Include="GameClient.cs" />
+    <Compile Include="Model\BrickWall.cs" />
+    <Compile Include="Model\Coin.cs" />
+    <Compile Include="Model\GameObject.cs" />
+    <Compile Include="Model\Life.cs" />
+    <Compile Include="Model\StoneWall.cs" />
     <Compile Include="Model\Tank.cs" />
+    <Compile Include="Model\Water.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Game.resx">
