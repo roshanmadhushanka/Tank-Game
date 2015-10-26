@@ -67,13 +67,7 @@ namespace TANKiClient
 
                 if (lines[0].StartsWith("G"))
                 {
-                    //split command
-                    string[] tmp = Regex.Split(com, ":");
-                    string[] data = Regex.Split(tmp[1], ";");
-
-                    //take data individually 
-                    string player_name = data[0];
-                    string cord = data[1];
+                   
 
                 }
             }

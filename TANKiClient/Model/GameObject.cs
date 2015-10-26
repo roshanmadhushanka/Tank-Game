@@ -8,10 +8,10 @@ namespace TANKiClient.Model
 {
     class GameObject
     {
-        public int x_cord { set; get; }
+        public int x_cordination { set; get; }
         public int y_cord { set; get; }
 
-        GameObject[] Parser(String str)
+        public static GameObject[] Parser(String str)
         {
 
             return null;
