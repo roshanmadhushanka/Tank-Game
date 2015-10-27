@@ -13,10 +13,6 @@ namespace TANKiClient.Model
     {
         public static Arena arena;
         Hashtable map;
-        Hashtable tanks;
-        Hashtable brick_walls;
-        Hashtable stone_walls;
-        Hashtable water;
 
         public Arena(ref Hashtable map)
         {
