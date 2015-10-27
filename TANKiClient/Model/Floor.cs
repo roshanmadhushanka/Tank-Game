@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TANKiClient.Model
 {
-    class Coin : GameObject
+    class Floor
     {
         //Class variables
         public static Image image { set; get; }

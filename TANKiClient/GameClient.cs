@@ -79,15 +79,6 @@ namespace TANKiClient
                     }
                         
                     game.ExecuteCommand(data);
-                    /*
-                    game.Invoke(new Action(() =>
-                    {
-                        if (lines.Length == 5)
-                            game.ChangeTextBox("sssss");
-                        else
-                            game.ChangeTextBox("\n message => \n" + data + "\n");
-                        game.ExecuteCommand(data);
-                    }));*/
                 }
                 catch (Exception e)
                 {
