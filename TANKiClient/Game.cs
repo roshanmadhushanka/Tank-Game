@@ -22,7 +22,8 @@ namespace TANKiClient
         private static Game form = null;
         private GameClient client;
         private Hashtable map = new Hashtable();
-        Image icon = (Image)Properties.Resources.Tank;
+        Arena arena;
+        
         //Images
        
 
@@ -30,19 +31,17 @@ namespace TANKiClient
         {
             InitializeComponent();
             client = new GameClient(this);
-            
+            GameObject.LoadGraphic();        //Loadin images  
            
             InitMap();                        //Initialize Map
-            Arena arena = new Arena(ref map); //Pass Graphical map as a reference
-
-            Tank.AddAllTanks();               //Iitialize All Tanks
-
+            arena = new Arena(ref map);       //Pass Graphical map as a reference
         }
 
         public void InitMap()
         {
             //For Demo Only
             //Map Image boxes into a init number
+            
             map.Add(1, c00);
             map.Add(2, c01);
             map.Add(3, c02);
@@ -183,7 +182,7 @@ namespace TANKiClient
             }
             else
             {
-                string[] lines = Regex.Split(com, ":");
+                string[] lines = Regex.Split(com.Substring(0, com.Length-1), ":");
                 if (lines[0].StartsWith("I"))
                 {
                     //Game initilizing
@@ -201,6 +200,7 @@ namespace TANKiClient
                     //Game data
 
                 }
+                Decoder.Decode(com);
             }
         }
 
@@ -257,6 +257,13 @@ namespace TANKiClient
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
+        {
+            Decoder.Decode("G:P0;0,0;0;0;100;0;0:P1;0,9;0;0;100;0;0:P2;9,0;0;0;100;0;0:P3;9,9;0;0;100;0;0:3,1,0;5,8,0;8,7,0;0,4,0;2,6,0;4,8,0;1,3,0;4,3,0;6,8,0;2,4,0#");
+            //Decoder.Decode("S:P1:1,1:0#");
+            Arena.UpdateArena();
+        }
+
+        private void c69_Click(object sender, EventArgs e)
         {
             
         }

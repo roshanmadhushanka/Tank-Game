@@ -10,11 +10,20 @@ namespace TANKiClient.Model
     class Water : GameObject
     {
         //Class variables
-        public static Image image { set; get; }
+        public static Image img_water { set; get; }
+
+        public Water(int x_cordinate, int y_cordinate)
+        {
+            this.x_cordinate = x_cordinate;
+            this.y_cordinate = y_cordinate;
+            this.image = Water.img_water;
+            this.isVisible = true;
+            this.type = Type.WATER;
+        }
 
         public static void LoadGraphics()
         {
-
+            img_water = (Image)Properties.Resources.W;
         }
     }
 }

@@ -10,11 +10,16 @@ namespace TANKiClient.Model
     class Coin : GameObject
     {
         //Class variables
-        public static Image image { set; get; }
+        public static Image img_coin { set; get; }
 
+        public Coin(int x_cordinate, int y_cordinate)
+        {
+            this.image = Coin.img_coin;
+            this.type = Type.COIN;
+        }
         public static void LoadGraphics()
         {
-
+            img_coin = (Image)Properties.Resources.C;
         }
     }
 }

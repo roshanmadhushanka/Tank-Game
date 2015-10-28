@@ -47,6 +47,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decoder.cs" />
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,18 +72,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -93,10 +94,94 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tank.png" />
+    <None Include="Resources\Health\H.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Tank1.png" />
+    <None Include="Resources\Tanks\T1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walls\B0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walls\B1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walls\B2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walls\B3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Water\W.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor\F.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coin\C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Walls\S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T33.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T41.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T42.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T43.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tanks\T53.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Floor\G.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

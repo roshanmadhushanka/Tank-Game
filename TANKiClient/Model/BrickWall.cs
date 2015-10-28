@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -11,22 +12,47 @@ namespace TANKiClient.Model
     {
         //Object variables
         public int damage { set; get; }
-        public Image image { set; get; }
 
         //Class variables
-        public static Image dmage0 { set; get; }
-        public static Image dmage1 { set; get; }
-        public static Image dmage2 { set; get; }
+        private static Hashtable bricks = new Hashtable();
+        public static Image damage0 { set; get; }
+        public static Image damage1 { set; get; }
+        public static Image damage2 { set; get; }
+        public static Image damage3 { set; get; }
 
-        private BrickWall(int x_cordination, int y_cordination, int damage)
+        public BrickWall(int x_cordination, int y_cordination, int damage)
         {
             this.x_cordinate = x_cordination;
             this.y_cordinate = y_cordination;
             this.damage = damage;
+            switch (damage)
+            {
+                case 0:
+                    this.image = BrickWall.damage0;
+                    break;
+                case 1:
+                    this.image = BrickWall.damage1;
+                    break;
+                case 2:
+                    this.image = BrickWall.damage2;
+                    break;
+                case 3:
+                    this.image = BrickWall.damage3;
+                    break;
+                default:
+                    this.image = null;
+                    this.type = Type.FLOOR;
+                    break;
+            }
+            this.isVisible = true;
+            this.type = Type.BRICK;
         }
 
         public static void LoadGraphics() {
-
+            damage0 = (Image)Properties.Resources.B0;
+            damage1 = (Image)Properties.Resources.B1;
+            damage2 = (Image)Properties.Resources.B2;
+            damage3 = (Image)Properties.Resources.B3;
         }
 
         public void Update(int damage) {
@@ -34,18 +60,24 @@ namespace TANKiClient.Model
             switch (damage)
             {
                 case 0:
-                    this.image = BrickWall.dmage0;
+                    this.image = BrickWall.damage0;
                     break;
                 case 1:
-                    this.image = BrickWall.dmage1;
+                    this.image = BrickWall.damage1;
                     break;
                 case 2:
-                    this.image = BrickWall.dmage2;
+                    this.image = BrickWall.damage2;
                     break;
                 default:
-                    this.image = Floor.image;
+                    this.image = null;
                     break;
             }
+        }
+
+        public static void AddBrickWall(int x_cordinate, int y_cordinate)
+        {
+            int num = y_cordinate * 10 + (x_cordinate + 1);
+            bricks.Add(num, new BrickWall(x_cordinate, y_cordinate, 0));
         }
 
 

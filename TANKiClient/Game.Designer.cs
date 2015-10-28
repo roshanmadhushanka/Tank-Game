@@ -484,6 +484,7 @@
             this.c99.Location = new System.Drawing.Point(331, 338);
             this.c99.Name = "c99";
             this.c99.Size = new System.Drawing.Size(30, 30);
+            this.c99.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c99.TabIndex = 99;
             this.c99.TabStop = false;
             // 
@@ -493,6 +494,7 @@
             this.c98.Location = new System.Drawing.Point(295, 338);
             this.c98.Name = "c98";
             this.c98.Size = new System.Drawing.Size(30, 30);
+            this.c98.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c98.TabIndex = 98;
             this.c98.TabStop = false;
             // 
@@ -502,6 +504,7 @@
             this.c97.Location = new System.Drawing.Point(259, 338);
             this.c97.Name = "c97";
             this.c97.Size = new System.Drawing.Size(30, 30);
+            this.c97.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c97.TabIndex = 97;
             this.c97.TabStop = false;
             // 
@@ -511,6 +514,7 @@
             this.c96.Location = new System.Drawing.Point(224, 338);
             this.c96.Name = "c96";
             this.c96.Size = new System.Drawing.Size(30, 30);
+            this.c96.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c96.TabIndex = 96;
             this.c96.TabStop = false;
             // 
@@ -520,6 +524,7 @@
             this.c95.Location = new System.Drawing.Point(188, 338);
             this.c95.Name = "c95";
             this.c95.Size = new System.Drawing.Size(30, 30);
+            this.c95.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c95.TabIndex = 95;
             this.c95.TabStop = false;
             // 
@@ -529,6 +534,7 @@
             this.c94.Location = new System.Drawing.Point(152, 338);
             this.c94.Name = "c94";
             this.c94.Size = new System.Drawing.Size(30, 30);
+            this.c94.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c94.TabIndex = 94;
             this.c94.TabStop = false;
             // 
@@ -538,6 +544,7 @@
             this.c93.Location = new System.Drawing.Point(116, 338);
             this.c93.Name = "c93";
             this.c93.Size = new System.Drawing.Size(30, 30);
+            this.c93.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c93.TabIndex = 93;
             this.c93.TabStop = false;
             // 
@@ -547,6 +554,7 @@
             this.c92.Location = new System.Drawing.Point(80, 338);
             this.c92.Name = "c92";
             this.c92.Size = new System.Drawing.Size(30, 30);
+            this.c92.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c92.TabIndex = 92;
             this.c92.TabStop = false;
             // 
@@ -556,6 +564,7 @@
             this.c91.Location = new System.Drawing.Point(44, 338);
             this.c91.Name = "c91";
             this.c91.Size = new System.Drawing.Size(30, 30);
+            this.c91.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c91.TabIndex = 91;
             this.c91.TabStop = false;
             // 
@@ -565,6 +574,7 @@
             this.c90.Location = new System.Drawing.Point(8, 338);
             this.c90.Name = "c90";
             this.c90.Size = new System.Drawing.Size(30, 30);
+            this.c90.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c90.TabIndex = 90;
             this.c90.TabStop = false;
             // 
@@ -574,6 +584,7 @@
             this.c89.Location = new System.Drawing.Point(331, 302);
             this.c89.Name = "c89";
             this.c89.Size = new System.Drawing.Size(30, 30);
+            this.c89.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c89.TabIndex = 89;
             this.c89.TabStop = false;
             // 
@@ -583,6 +594,7 @@
             this.c88.Location = new System.Drawing.Point(295, 302);
             this.c88.Name = "c88";
             this.c88.Size = new System.Drawing.Size(30, 30);
+            this.c88.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c88.TabIndex = 88;
             this.c88.TabStop = false;
             // 
@@ -592,6 +604,7 @@
             this.c87.Location = new System.Drawing.Point(259, 302);
             this.c87.Name = "c87";
             this.c87.Size = new System.Drawing.Size(30, 30);
+            this.c87.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c87.TabIndex = 87;
             this.c87.TabStop = false;
             // 
@@ -601,6 +614,7 @@
             this.c86.Location = new System.Drawing.Point(224, 302);
             this.c86.Name = "c86";
             this.c86.Size = new System.Drawing.Size(30, 30);
+            this.c86.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c86.TabIndex = 86;
             this.c86.TabStop = false;
             // 
@@ -610,6 +624,7 @@
             this.c85.Location = new System.Drawing.Point(188, 302);
             this.c85.Name = "c85";
             this.c85.Size = new System.Drawing.Size(30, 30);
+            this.c85.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c85.TabIndex = 85;
             this.c85.TabStop = false;
             // 
@@ -619,6 +634,7 @@
             this.c84.Location = new System.Drawing.Point(152, 302);
             this.c84.Name = "c84";
             this.c84.Size = new System.Drawing.Size(30, 30);
+            this.c84.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c84.TabIndex = 84;
             this.c84.TabStop = false;
             // 
@@ -628,6 +644,7 @@
             this.c83.Location = new System.Drawing.Point(116, 302);
             this.c83.Name = "c83";
             this.c83.Size = new System.Drawing.Size(30, 30);
+            this.c83.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c83.TabIndex = 83;
             this.c83.TabStop = false;
             // 
@@ -637,6 +654,7 @@
             this.c82.Location = new System.Drawing.Point(80, 302);
             this.c82.Name = "c82";
             this.c82.Size = new System.Drawing.Size(30, 30);
+            this.c82.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c82.TabIndex = 82;
             this.c82.TabStop = false;
             // 
@@ -646,6 +664,7 @@
             this.c81.Location = new System.Drawing.Point(44, 302);
             this.c81.Name = "c81";
             this.c81.Size = new System.Drawing.Size(30, 30);
+            this.c81.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c81.TabIndex = 81;
             this.c81.TabStop = false;
             // 
@@ -655,6 +674,7 @@
             this.c80.Location = new System.Drawing.Point(8, 302);
             this.c80.Name = "c80";
             this.c80.Size = new System.Drawing.Size(30, 30);
+            this.c80.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c80.TabIndex = 80;
             this.c80.TabStop = false;
             // 
@@ -664,6 +684,7 @@
             this.c79.Location = new System.Drawing.Point(331, 266);
             this.c79.Name = "c79";
             this.c79.Size = new System.Drawing.Size(30, 30);
+            this.c79.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c79.TabIndex = 79;
             this.c79.TabStop = false;
             // 
@@ -673,6 +694,7 @@
             this.c78.Location = new System.Drawing.Point(295, 266);
             this.c78.Name = "c78";
             this.c78.Size = new System.Drawing.Size(30, 30);
+            this.c78.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c78.TabIndex = 78;
             this.c78.TabStop = false;
             // 
@@ -682,6 +704,7 @@
             this.c77.Location = new System.Drawing.Point(259, 266);
             this.c77.Name = "c77";
             this.c77.Size = new System.Drawing.Size(30, 30);
+            this.c77.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c77.TabIndex = 77;
             this.c77.TabStop = false;
             // 
@@ -691,6 +714,7 @@
             this.c76.Location = new System.Drawing.Point(224, 266);
             this.c76.Name = "c76";
             this.c76.Size = new System.Drawing.Size(30, 30);
+            this.c76.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c76.TabIndex = 76;
             this.c76.TabStop = false;
             // 
@@ -700,6 +724,7 @@
             this.c75.Location = new System.Drawing.Point(188, 266);
             this.c75.Name = "c75";
             this.c75.Size = new System.Drawing.Size(30, 30);
+            this.c75.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c75.TabIndex = 75;
             this.c75.TabStop = false;
             // 
@@ -709,6 +734,7 @@
             this.c74.Location = new System.Drawing.Point(152, 266);
             this.c74.Name = "c74";
             this.c74.Size = new System.Drawing.Size(30, 30);
+            this.c74.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c74.TabIndex = 74;
             this.c74.TabStop = false;
             // 
@@ -718,6 +744,7 @@
             this.c73.Location = new System.Drawing.Point(116, 266);
             this.c73.Name = "c73";
             this.c73.Size = new System.Drawing.Size(30, 30);
+            this.c73.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c73.TabIndex = 73;
             this.c73.TabStop = false;
             // 
@@ -727,6 +754,7 @@
             this.c72.Location = new System.Drawing.Point(80, 266);
             this.c72.Name = "c72";
             this.c72.Size = new System.Drawing.Size(30, 30);
+            this.c72.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c72.TabIndex = 72;
             this.c72.TabStop = false;
             // 
@@ -736,6 +764,7 @@
             this.c71.Location = new System.Drawing.Point(44, 266);
             this.c71.Name = "c71";
             this.c71.Size = new System.Drawing.Size(30, 30);
+            this.c71.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c71.TabIndex = 71;
             this.c71.TabStop = false;
             // 
@@ -745,6 +774,7 @@
             this.c70.Location = new System.Drawing.Point(8, 266);
             this.c70.Name = "c70";
             this.c70.Size = new System.Drawing.Size(30, 30);
+            this.c70.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c70.TabIndex = 70;
             this.c70.TabStop = false;
             // 
@@ -754,8 +784,10 @@
             this.c69.Location = new System.Drawing.Point(331, 230);
             this.c69.Name = "c69";
             this.c69.Size = new System.Drawing.Size(30, 30);
+            this.c69.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c69.TabIndex = 69;
             this.c69.TabStop = false;
+            this.c69.Click += new System.EventHandler(this.c69_Click);
             // 
             // c68
             // 
@@ -763,6 +795,7 @@
             this.c68.Location = new System.Drawing.Point(295, 230);
             this.c68.Name = "c68";
             this.c68.Size = new System.Drawing.Size(30, 30);
+            this.c68.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c68.TabIndex = 68;
             this.c68.TabStop = false;
             // 
@@ -772,6 +805,7 @@
             this.c67.Location = new System.Drawing.Point(259, 230);
             this.c67.Name = "c67";
             this.c67.Size = new System.Drawing.Size(30, 30);
+            this.c67.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c67.TabIndex = 67;
             this.c67.TabStop = false;
             // 
@@ -781,6 +815,7 @@
             this.c66.Location = new System.Drawing.Point(224, 230);
             this.c66.Name = "c66";
             this.c66.Size = new System.Drawing.Size(30, 30);
+            this.c66.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c66.TabIndex = 66;
             this.c66.TabStop = false;
             // 
@@ -790,6 +825,7 @@
             this.c65.Location = new System.Drawing.Point(188, 230);
             this.c65.Name = "c65";
             this.c65.Size = new System.Drawing.Size(30, 30);
+            this.c65.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c65.TabIndex = 65;
             this.c65.TabStop = false;
             // 
@@ -799,6 +835,7 @@
             this.c64.Location = new System.Drawing.Point(152, 230);
             this.c64.Name = "c64";
             this.c64.Size = new System.Drawing.Size(30, 30);
+            this.c64.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c64.TabIndex = 64;
             this.c64.TabStop = false;
             // 
@@ -808,6 +845,7 @@
             this.c63.Location = new System.Drawing.Point(116, 230);
             this.c63.Name = "c63";
             this.c63.Size = new System.Drawing.Size(30, 30);
+            this.c63.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c63.TabIndex = 63;
             this.c63.TabStop = false;
             // 
@@ -817,6 +855,7 @@
             this.c62.Location = new System.Drawing.Point(80, 230);
             this.c62.Name = "c62";
             this.c62.Size = new System.Drawing.Size(30, 30);
+            this.c62.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c62.TabIndex = 62;
             this.c62.TabStop = false;
             // 
@@ -826,6 +865,7 @@
             this.c61.Location = new System.Drawing.Point(44, 230);
             this.c61.Name = "c61";
             this.c61.Size = new System.Drawing.Size(30, 30);
+            this.c61.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c61.TabIndex = 61;
             this.c61.TabStop = false;
             // 
@@ -835,6 +875,7 @@
             this.c60.Location = new System.Drawing.Point(8, 230);
             this.c60.Name = "c60";
             this.c60.Size = new System.Drawing.Size(30, 30);
+            this.c60.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c60.TabIndex = 60;
             this.c60.TabStop = false;
             // 
@@ -844,6 +885,7 @@
             this.c59.Location = new System.Drawing.Point(331, 194);
             this.c59.Name = "c59";
             this.c59.Size = new System.Drawing.Size(30, 30);
+            this.c59.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c59.TabIndex = 59;
             this.c59.TabStop = false;
             // 
@@ -853,6 +895,7 @@
             this.c58.Location = new System.Drawing.Point(295, 194);
             this.c58.Name = "c58";
             this.c58.Size = new System.Drawing.Size(30, 30);
+            this.c58.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c58.TabIndex = 58;
             this.c58.TabStop = false;
             // 
@@ -862,6 +905,7 @@
             this.c57.Location = new System.Drawing.Point(259, 194);
             this.c57.Name = "c57";
             this.c57.Size = new System.Drawing.Size(30, 30);
+            this.c57.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c57.TabIndex = 57;
             this.c57.TabStop = false;
             // 
@@ -871,6 +915,7 @@
             this.c56.Location = new System.Drawing.Point(224, 194);
             this.c56.Name = "c56";
             this.c56.Size = new System.Drawing.Size(30, 30);
+            this.c56.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c56.TabIndex = 56;
             this.c56.TabStop = false;
             // 
@@ -880,6 +925,7 @@
             this.c55.Location = new System.Drawing.Point(188, 194);
             this.c55.Name = "c55";
             this.c55.Size = new System.Drawing.Size(30, 30);
+            this.c55.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c55.TabIndex = 55;
             this.c55.TabStop = false;
             // 
@@ -889,6 +935,7 @@
             this.c54.Location = new System.Drawing.Point(152, 194);
             this.c54.Name = "c54";
             this.c54.Size = new System.Drawing.Size(30, 30);
+            this.c54.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c54.TabIndex = 54;
             this.c54.TabStop = false;
             // 
@@ -898,6 +945,7 @@
             this.c53.Location = new System.Drawing.Point(116, 194);
             this.c53.Name = "c53";
             this.c53.Size = new System.Drawing.Size(30, 30);
+            this.c53.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c53.TabIndex = 53;
             this.c53.TabStop = false;
             // 
@@ -907,6 +955,7 @@
             this.c52.Location = new System.Drawing.Point(80, 194);
             this.c52.Name = "c52";
             this.c52.Size = new System.Drawing.Size(30, 30);
+            this.c52.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c52.TabIndex = 52;
             this.c52.TabStop = false;
             // 
@@ -916,6 +965,7 @@
             this.c51.Location = new System.Drawing.Point(44, 194);
             this.c51.Name = "c51";
             this.c51.Size = new System.Drawing.Size(30, 30);
+            this.c51.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c51.TabIndex = 51;
             this.c51.TabStop = false;
             // 
@@ -925,6 +975,7 @@
             this.c50.Location = new System.Drawing.Point(8, 194);
             this.c50.Name = "c50";
             this.c50.Size = new System.Drawing.Size(30, 30);
+            this.c50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c50.TabIndex = 50;
             this.c50.TabStop = false;
             // 
@@ -934,6 +985,7 @@
             this.c49.Location = new System.Drawing.Point(331, 158);
             this.c49.Name = "c49";
             this.c49.Size = new System.Drawing.Size(30, 30);
+            this.c49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c49.TabIndex = 49;
             this.c49.TabStop = false;
             // 
@@ -943,6 +995,7 @@
             this.c48.Location = new System.Drawing.Point(295, 158);
             this.c48.Name = "c48";
             this.c48.Size = new System.Drawing.Size(30, 30);
+            this.c48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c48.TabIndex = 48;
             this.c48.TabStop = false;
             // 
@@ -952,6 +1005,7 @@
             this.c47.Location = new System.Drawing.Point(259, 158);
             this.c47.Name = "c47";
             this.c47.Size = new System.Drawing.Size(30, 30);
+            this.c47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c47.TabIndex = 47;
             this.c47.TabStop = false;
             // 
@@ -961,6 +1015,7 @@
             this.c46.Location = new System.Drawing.Point(224, 158);
             this.c46.Name = "c46";
             this.c46.Size = new System.Drawing.Size(30, 30);
+            this.c46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c46.TabIndex = 46;
             this.c46.TabStop = false;
             // 
@@ -970,6 +1025,7 @@
             this.c45.Location = new System.Drawing.Point(188, 158);
             this.c45.Name = "c45";
             this.c45.Size = new System.Drawing.Size(30, 30);
+            this.c45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c45.TabIndex = 45;
             this.c45.TabStop = false;
             // 
@@ -979,6 +1035,7 @@
             this.c44.Location = new System.Drawing.Point(152, 158);
             this.c44.Name = "c44";
             this.c44.Size = new System.Drawing.Size(30, 30);
+            this.c44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c44.TabIndex = 44;
             this.c44.TabStop = false;
             // 
@@ -988,6 +1045,7 @@
             this.c43.Location = new System.Drawing.Point(116, 158);
             this.c43.Name = "c43";
             this.c43.Size = new System.Drawing.Size(30, 30);
+            this.c43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c43.TabIndex = 43;
             this.c43.TabStop = false;
             // 
@@ -997,6 +1055,7 @@
             this.c42.Location = new System.Drawing.Point(80, 158);
             this.c42.Name = "c42";
             this.c42.Size = new System.Drawing.Size(30, 30);
+            this.c42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c42.TabIndex = 42;
             this.c42.TabStop = false;
             // 
@@ -1006,6 +1065,7 @@
             this.c41.Location = new System.Drawing.Point(44, 158);
             this.c41.Name = "c41";
             this.c41.Size = new System.Drawing.Size(30, 30);
+            this.c41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c41.TabIndex = 41;
             this.c41.TabStop = false;
             // 
@@ -1015,6 +1075,7 @@
             this.c40.Location = new System.Drawing.Point(8, 158);
             this.c40.Name = "c40";
             this.c40.Size = new System.Drawing.Size(30, 30);
+            this.c40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c40.TabIndex = 40;
             this.c40.TabStop = false;
             // 
@@ -1024,6 +1085,7 @@
             this.c39.Location = new System.Drawing.Point(331, 122);
             this.c39.Name = "c39";
             this.c39.Size = new System.Drawing.Size(30, 30);
+            this.c39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c39.TabIndex = 39;
             this.c39.TabStop = false;
             // 
@@ -1033,6 +1095,7 @@
             this.c38.Location = new System.Drawing.Point(295, 122);
             this.c38.Name = "c38";
             this.c38.Size = new System.Drawing.Size(30, 30);
+            this.c38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c38.TabIndex = 38;
             this.c38.TabStop = false;
             // 
@@ -1042,6 +1105,7 @@
             this.c37.Location = new System.Drawing.Point(259, 122);
             this.c37.Name = "c37";
             this.c37.Size = new System.Drawing.Size(30, 30);
+            this.c37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c37.TabIndex = 37;
             this.c37.TabStop = false;
             // 
@@ -1051,6 +1115,7 @@
             this.c36.Location = new System.Drawing.Point(224, 122);
             this.c36.Name = "c36";
             this.c36.Size = new System.Drawing.Size(30, 30);
+            this.c36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c36.TabIndex = 36;
             this.c36.TabStop = false;
             // 
@@ -1060,6 +1125,7 @@
             this.c35.Location = new System.Drawing.Point(188, 122);
             this.c35.Name = "c35";
             this.c35.Size = new System.Drawing.Size(30, 30);
+            this.c35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c35.TabIndex = 35;
             this.c35.TabStop = false;
             // 
@@ -1069,6 +1135,7 @@
             this.c34.Location = new System.Drawing.Point(152, 122);
             this.c34.Name = "c34";
             this.c34.Size = new System.Drawing.Size(30, 30);
+            this.c34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c34.TabIndex = 34;
             this.c34.TabStop = false;
             // 
@@ -1078,6 +1145,7 @@
             this.c33.Location = new System.Drawing.Point(116, 122);
             this.c33.Name = "c33";
             this.c33.Size = new System.Drawing.Size(30, 30);
+            this.c33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c33.TabIndex = 33;
             this.c33.TabStop = false;
             // 
@@ -1087,6 +1155,7 @@
             this.c32.Location = new System.Drawing.Point(80, 122);
             this.c32.Name = "c32";
             this.c32.Size = new System.Drawing.Size(30, 30);
+            this.c32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c32.TabIndex = 32;
             this.c32.TabStop = false;
             // 
@@ -1096,6 +1165,7 @@
             this.c31.Location = new System.Drawing.Point(44, 122);
             this.c31.Name = "c31";
             this.c31.Size = new System.Drawing.Size(30, 30);
+            this.c31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c31.TabIndex = 31;
             this.c31.TabStop = false;
             // 
@@ -1105,6 +1175,7 @@
             this.c30.Location = new System.Drawing.Point(8, 122);
             this.c30.Name = "c30";
             this.c30.Size = new System.Drawing.Size(30, 30);
+            this.c30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c30.TabIndex = 30;
             this.c30.TabStop = false;
             // 
@@ -1114,6 +1185,7 @@
             this.c29.Location = new System.Drawing.Point(331, 86);
             this.c29.Name = "c29";
             this.c29.Size = new System.Drawing.Size(30, 30);
+            this.c29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c29.TabIndex = 29;
             this.c29.TabStop = false;
             // 
@@ -1123,6 +1195,7 @@
             this.c28.Location = new System.Drawing.Point(295, 86);
             this.c28.Name = "c28";
             this.c28.Size = new System.Drawing.Size(30, 30);
+            this.c28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c28.TabIndex = 28;
             this.c28.TabStop = false;
             // 
@@ -1132,6 +1205,7 @@
             this.c27.Location = new System.Drawing.Point(259, 86);
             this.c27.Name = "c27";
             this.c27.Size = new System.Drawing.Size(30, 30);
+            this.c27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c27.TabIndex = 27;
             this.c27.TabStop = false;
             // 
@@ -1141,6 +1215,7 @@
             this.c26.Location = new System.Drawing.Point(224, 86);
             this.c26.Name = "c26";
             this.c26.Size = new System.Drawing.Size(30, 30);
+            this.c26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c26.TabIndex = 26;
             this.c26.TabStop = false;
             // 
@@ -1150,6 +1225,7 @@
             this.c25.Location = new System.Drawing.Point(188, 86);
             this.c25.Name = "c25";
             this.c25.Size = new System.Drawing.Size(30, 30);
+            this.c25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c25.TabIndex = 25;
             this.c25.TabStop = false;
             // 
@@ -1159,6 +1235,7 @@
             this.c24.Location = new System.Drawing.Point(152, 86);
             this.c24.Name = "c24";
             this.c24.Size = new System.Drawing.Size(30, 30);
+            this.c24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c24.TabIndex = 24;
             this.c24.TabStop = false;
             // 
@@ -1168,6 +1245,7 @@
             this.c23.Location = new System.Drawing.Point(116, 86);
             this.c23.Name = "c23";
             this.c23.Size = new System.Drawing.Size(30, 30);
+            this.c23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c23.TabIndex = 23;
             this.c23.TabStop = false;
             // 
@@ -1177,6 +1255,7 @@
             this.c22.Location = new System.Drawing.Point(80, 86);
             this.c22.Name = "c22";
             this.c22.Size = new System.Drawing.Size(30, 30);
+            this.c22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c22.TabIndex = 22;
             this.c22.TabStop = false;
             // 
@@ -1186,6 +1265,7 @@
             this.c21.Location = new System.Drawing.Point(44, 86);
             this.c21.Name = "c21";
             this.c21.Size = new System.Drawing.Size(30, 30);
+            this.c21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c21.TabIndex = 21;
             this.c21.TabStop = false;
             // 
@@ -1195,6 +1275,7 @@
             this.c20.Location = new System.Drawing.Point(8, 86);
             this.c20.Name = "c20";
             this.c20.Size = new System.Drawing.Size(30, 30);
+            this.c20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c20.TabIndex = 20;
             this.c20.TabStop = false;
             // 
@@ -1204,6 +1285,7 @@
             this.c19.Location = new System.Drawing.Point(331, 50);
             this.c19.Name = "c19";
             this.c19.Size = new System.Drawing.Size(30, 30);
+            this.c19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c19.TabIndex = 19;
             this.c19.TabStop = false;
             // 
@@ -1213,6 +1295,7 @@
             this.c18.Location = new System.Drawing.Point(295, 50);
             this.c18.Name = "c18";
             this.c18.Size = new System.Drawing.Size(30, 30);
+            this.c18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c18.TabIndex = 18;
             this.c18.TabStop = false;
             // 
@@ -1222,6 +1305,7 @@
             this.c17.Location = new System.Drawing.Point(259, 50);
             this.c17.Name = "c17";
             this.c17.Size = new System.Drawing.Size(30, 30);
+            this.c17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c17.TabIndex = 17;
             this.c17.TabStop = false;
             // 
@@ -1231,6 +1315,7 @@
             this.c16.Location = new System.Drawing.Point(224, 50);
             this.c16.Name = "c16";
             this.c16.Size = new System.Drawing.Size(30, 30);
+            this.c16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c16.TabIndex = 16;
             this.c16.TabStop = false;
             // 
@@ -1240,6 +1325,7 @@
             this.c15.Location = new System.Drawing.Point(188, 50);
             this.c15.Name = "c15";
             this.c15.Size = new System.Drawing.Size(30, 30);
+            this.c15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c15.TabIndex = 15;
             this.c15.TabStop = false;
             // 
@@ -1249,6 +1335,7 @@
             this.c14.Location = new System.Drawing.Point(152, 50);
             this.c14.Name = "c14";
             this.c14.Size = new System.Drawing.Size(30, 30);
+            this.c14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c14.TabIndex = 14;
             this.c14.TabStop = false;
             // 
@@ -1258,6 +1345,7 @@
             this.c13.Location = new System.Drawing.Point(116, 50);
             this.c13.Name = "c13";
             this.c13.Size = new System.Drawing.Size(30, 30);
+            this.c13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c13.TabIndex = 13;
             this.c13.TabStop = false;
             // 
@@ -1267,6 +1355,7 @@
             this.c12.Location = new System.Drawing.Point(80, 50);
             this.c12.Name = "c12";
             this.c12.Size = new System.Drawing.Size(30, 30);
+            this.c12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c12.TabIndex = 12;
             this.c12.TabStop = false;
             // 
@@ -1276,6 +1365,7 @@
             this.c11.Location = new System.Drawing.Point(44, 50);
             this.c11.Name = "c11";
             this.c11.Size = new System.Drawing.Size(30, 30);
+            this.c11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c11.TabIndex = 11;
             this.c11.TabStop = false;
             // 
@@ -1285,6 +1375,7 @@
             this.c10.Location = new System.Drawing.Point(8, 50);
             this.c10.Name = "c10";
             this.c10.Size = new System.Drawing.Size(30, 30);
+            this.c10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c10.TabIndex = 10;
             this.c10.TabStop = false;
             // 
@@ -1294,6 +1385,7 @@
             this.c09.Location = new System.Drawing.Point(331, 14);
             this.c09.Name = "c09";
             this.c09.Size = new System.Drawing.Size(30, 30);
+            this.c09.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c09.TabIndex = 9;
             this.c09.TabStop = false;
             // 
@@ -1303,6 +1395,7 @@
             this.c08.Location = new System.Drawing.Point(295, 14);
             this.c08.Name = "c08";
             this.c08.Size = new System.Drawing.Size(30, 30);
+            this.c08.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c08.TabIndex = 8;
             this.c08.TabStop = false;
             // 
@@ -1312,6 +1405,7 @@
             this.c07.Location = new System.Drawing.Point(259, 14);
             this.c07.Name = "c07";
             this.c07.Size = new System.Drawing.Size(30, 30);
+            this.c07.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c07.TabIndex = 7;
             this.c07.TabStop = false;
             // 
@@ -1321,6 +1415,7 @@
             this.c06.Location = new System.Drawing.Point(224, 14);
             this.c06.Name = "c06";
             this.c06.Size = new System.Drawing.Size(30, 30);
+            this.c06.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c06.TabIndex = 6;
             this.c06.TabStop = false;
             // 
@@ -1330,6 +1425,7 @@
             this.c05.Location = new System.Drawing.Point(188, 14);
             this.c05.Name = "c05";
             this.c05.Size = new System.Drawing.Size(30, 30);
+            this.c05.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c05.TabIndex = 5;
             this.c05.TabStop = false;
             // 
@@ -1339,6 +1435,7 @@
             this.c04.Location = new System.Drawing.Point(152, 14);
             this.c04.Name = "c04";
             this.c04.Size = new System.Drawing.Size(30, 30);
+            this.c04.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c04.TabIndex = 4;
             this.c04.TabStop = false;
             // 
@@ -1348,6 +1445,7 @@
             this.c03.Location = new System.Drawing.Point(116, 14);
             this.c03.Name = "c03";
             this.c03.Size = new System.Drawing.Size(30, 30);
+            this.c03.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c03.TabIndex = 3;
             this.c03.TabStop = false;
             // 
@@ -1357,6 +1455,7 @@
             this.c02.Location = new System.Drawing.Point(80, 14);
             this.c02.Name = "c02";
             this.c02.Size = new System.Drawing.Size(30, 30);
+            this.c02.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c02.TabIndex = 2;
             this.c02.TabStop = false;
             // 
@@ -1366,16 +1465,17 @@
             this.c01.Location = new System.Drawing.Point(44, 14);
             this.c01.Name = "c01";
             this.c01.Size = new System.Drawing.Size(30, 30);
+            this.c01.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c01.TabIndex = 1;
             this.c01.TabStop = false;
             // 
             // c00
             // 
             this.c00.BackColor = System.Drawing.Color.MintCream;
-            this.c00.Image = global::TANKiClient.Properties.Resources.Tank;
             this.c00.Location = new System.Drawing.Point(8, 14);
             this.c00.Name = "c00";
             this.c00.Size = new System.Drawing.Size(30, 30);
+            this.c00.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.c00.TabIndex = 0;
             this.c00.TabStop = false;
             // 

@@ -7,14 +7,22 @@ using System.Threading.Tasks;
 
 namespace TANKiClient.Model
 {
-    class Floor
+    class Floor : GameObject
     {
         //Class variables
-        public static Image image { set; get; }
+        public static Image img_floor { set; get; }
 
+        public Floor(int x_cordinate, int y_cordinate)
+        {
+            this.x_cordinate = x_cordinate;
+            this.y_cordinate = y_cordinate;
+            this.image = Floor.img_floor;
+            this.isVisible = true;
+            this.type = Type.FLOOR;
+        }
         public static void LoadGraphics()
         {
-
+            img_floor = (Image)Properties.Resources.G;
         }
     }
 }

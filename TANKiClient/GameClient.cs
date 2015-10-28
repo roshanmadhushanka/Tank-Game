@@ -77,7 +77,7 @@ namespace TANKiClient
                     {
                         game.ChangeTextBox("\n message => \n" + data + "\n");
                     }
-                        
+                     
                     game.ExecuteCommand(data);
                 }
                 catch (Exception e)
