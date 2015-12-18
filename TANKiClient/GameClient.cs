@@ -8,6 +8,7 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
+using TANKiClient.Model;
 
 namespace TANKiClient
 {
@@ -22,6 +23,8 @@ namespace TANKiClient
 
         private string data;
         private Thread listnerThread;
+        private Thread aiThread;
+
         private Game game;
         public GameClient(Game game)
         {
@@ -90,8 +93,22 @@ namespace TANKiClient
                     listner.Stop();
                     clientRecieve.Close();
                 }
-                
-                
+            }
+        }
+
+        public void startAI()
+        {
+            aiThread = new Thread(new ThreadStart(AICommand));
+            aiThread.Start();
+        }
+        public void AICommand()
+        {
+            while (AI.ai_status)
+            {
+                Arena.UpdateArena();
+                AI.run();
+                Arena.UpdateArena();
+                Thread.Sleep(100);
             }
         }
 

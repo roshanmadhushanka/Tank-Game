@@ -325,6 +325,7 @@ namespace TANKiClient
                 btnDown.Enabled = false;
                 btnLeft.Enabled = false;
                 btnRight.Enabled = false;
+                //client.startAI();
             }
             else
             {
