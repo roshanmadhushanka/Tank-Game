@@ -49,6 +49,7 @@ namespace TANKiClient.Model
         }
 
         public static void LoadGraphics() {
+            //Loadig brickwall graphics
             damage0 = (Image)Properties.Resources.B0;
             damage1 = (Image)Properties.Resources.B1;
             damage2 = (Image)Properties.Resources.B2;

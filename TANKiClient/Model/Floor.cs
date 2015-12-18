@@ -22,7 +22,8 @@ namespace TANKiClient.Model
         }
         public static void LoadGraphics()
         {
-            img_floor = (Image)Properties.Resources.G;
+            //Loading floor graphics
+            img_floor = (Image)Properties.Resources.F;
         }
     }
 }

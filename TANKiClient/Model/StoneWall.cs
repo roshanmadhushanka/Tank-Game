@@ -23,6 +23,7 @@ namespace TANKiClient.Model
 
         public static void LoadGraphics()
         {
+            //Loading stone graphics
             img_stone_wall = (Image)Properties.Resources.S;
         }
     }

@@ -13,20 +13,27 @@ namespace TANKiClient.Model
     {
         public static Arena arena;
         Hashtable map;
+        public static int size = 10;
         public static GameObject[,] obj_map { set; get; }
 
         public Arena(ref Hashtable map)
         {
-            obj_map = new GameObject[10, 10];
+            //Get the hashed pictureboxes by reference
+            obj_map = new GameObject[Arena.size, Arena.size];
             this.map = map;
             Arena.arena = this;
-            for(int i=0; i<10; i++)
+            for(int i=0; i< Arena.size; i++)
             {
-                for(int j=0; j<10; j++)
+                for(int j=0; j< Arena.size; j++)
                 {
                     obj_map[i,j] = new Floor(i,j);
                 }
             }
+        }
+
+        public int getArenaSize()
+        {
+            return size;
         }
 
         public void UpdateArena(int index, Image image)
@@ -37,28 +44,47 @@ namespace TANKiClient.Model
 
         public void UpdateArena(int x_cordinate, int y_cordinate, Image image)
         {
-            int num = y_cordinate * 10 + (x_cordinate + 1);
+            //Update Arena according to the position
+            int num = y_cordinate * Arena.size + (x_cordinate + 1);
             PictureBox tmp = (PictureBox)map[num];
             tmp.Image = image;
         }
 
         public static void AddGameObject(int x_cordinate, int y_cordinate, GameObject obj)
         {
+            //Adding game objects to the arena
+            obj_map[y_cordinate, x_cordinate] = obj;
+        }
+
+        public static GameObject GetGameObject(int x_cordinate, int y_cordinate)
+        {
+            return obj_map[y_cordinate, x_cordinate];
+        }
+
+        public static void AddGameObjectRef(int x_cordinate, int y_cordinate,ref GameObject obj)
+        {
             obj_map[y_cordinate, x_cordinate] = obj;
         }
 
         public static void UpdateArena()
         {
-            for(int i=0; i<10; i++)
+            //Render Arena
+            for(int i=0; i<Arena.size; i++)
             {
-                for(int j=0; j<10; j++)
+                for(int j=0; j< Arena.size; j++)
                 {
-                   // if(obj_map[i,j].GetType() != typeof(StoneWall) || obj_map[i, j].GetType() != typeof(Water))
-                  //  {
-                     //   Arena.arena.UpdateArena(j, i, Floor.img_floor);
-                        
-                    //}
                     Arena.arena.UpdateArena(j, i, obj_map[i, j].image);
+                }
+            }
+        }
+
+        public static void ClearArena()
+        {
+            for (int i = 0; i < Arena.size; i++)
+            {
+                for (int j = 0; j < Arena.size; j++)
+                {
+                    Arena.AddGameObject(i, j, new Floor(i,j));
                 }
             }
         }

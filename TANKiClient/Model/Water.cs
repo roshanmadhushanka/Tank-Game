@@ -23,6 +23,7 @@ namespace TANKiClient.Model
 
         public static void LoadGraphics()
         {
+            //Loading water graphics
             img_water = (Image)Properties.Resources.W;
         }
     }

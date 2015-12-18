@@ -47,7 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Decoder.cs" />
+    <Compile Include="AI.cs" />
+    <Compile Include="Decoder.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Game.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -65,8 +68,12 @@
     <Compile Include="Model\StoneWall.cs" />
     <Compile Include="Model\Tank.cs" />
     <Compile Include="Model\Water.cs" />
+    <Compile Include="Node.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Decoder.resx">
+      <DependentUpon>Decoder.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Game.resx">
       <DependentUpon>Game.cs</DependentUpon>
     </EmbeddedResource>

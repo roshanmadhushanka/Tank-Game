@@ -24,7 +24,7 @@ namespace TANKiClient.Model
         public int y_cordinate { set; get; }
         public bool isVisible { set; get; }
         public Image image { set; get; }
-        public static Arena arena { set; get; }
+        //public static Arena arena { set; get; }
         public Type type { set; get; }
         public static GameObject[] Parser(String str)
         {
@@ -33,6 +33,7 @@ namespace TANKiClient.Model
 
         public static void LoadGraphic()
         {
+            //Load all the graphics from each class
             BrickWall.LoadGraphics();
             Coin.LoadGraphics();
             Floor.LoadGraphics();

@@ -11,6 +11,9 @@ namespace TANKiClient.Model
 {
     public class Tank : GameObject
     {
+        public static string current_player_name { set; get; }
+
+       
         //Object variables
         public string name { set; get; }
         public int direction { set; get; }
@@ -46,10 +49,23 @@ namespace TANKiClient.Model
         {
 
         }
+
+
+        public static Tank getTank(string name)
+        {
+            if (!tanks.ContainsKey(name))
+            {
+                tanks.Add(name, new Tank(name));
+            }
+            return (Tank)tanks[name];
+        }
+
         public Tank(string name, int direction)
         {
             this.name = name;
             this.direction = direction;
+            this.type = Type.TANK;
+
             switch (name)
             {
                 case "P0":
@@ -151,6 +167,7 @@ namespace TANKiClient.Model
         }
         public Tank(string name, int x_cordinate, int y_cordinate)
         {
+            this.type = Type.TANK;
             this.name = name;
             switch (name)
             {
@@ -186,6 +203,7 @@ namespace TANKiClient.Model
 
         public Tank(string name)
         {
+            this.type = Type.TANK;
             this.name = name;
             switch (name)
             {
@@ -320,6 +338,7 @@ namespace TANKiClient.Model
 
         public static void LoadGraphics()
         {
+            //Loading Tank Graphics
             tank1 = (Image)Properties.Resources.T1;
             tank2 = (Image)Properties.Resources.T2;
             tank3 = (Image)Properties.Resources.T3;
@@ -345,6 +364,186 @@ namespace TANKiClient.Model
         public void Update(int x_cordinate, int y_cordinate, int direction, int shot, int health, int coins, int points)
         {
 
-        }                                                                                           
+        }         
+        
+        public void setDirection(int direction)
+        {
+            this.direction = direction;
+            switch (name)
+            {
+                case "P0":
+                    switch (direction)
+                    {
+                        case 0:
+                            this.image = Tank.tank1;
+                            break;
+                        case 1:
+                            this.image = Tank.tank11;
+                            break;
+                        case 2:
+                            this.image = Tank.tank12;
+                            break;
+                        case 3:
+                            this.image = Tank.tank13;
+                            break;
+                    }
+                    break;
+                case "P1":
+                    switch (direction)
+                    {
+                        case 0:
+                            this.image = Tank.tank2;
+                            break;
+                        case 1:
+                            this.image = Tank.tank21;
+                            break;
+                        case 2:
+                            this.image = Tank.tank22;
+                            break;
+                        case 3:
+                            this.image = Tank.tank23;
+                            break;
+                    }
+                    break;
+                case "P2":
+                    switch (direction)
+                    {
+                        case 0:
+                            this.image = Tank.tank3;
+                            break;
+                        case 1:
+                            this.image = Tank.tank31;
+                            break;
+                        case 2:
+                            this.image = Tank.tank32;
+                            break;
+                        case 3:
+                            this.image = Tank.tank33;
+                            break;
+                    }
+                    break;
+                case "P3":
+                    switch (direction)
+                    {
+                        case 0:
+                            this.image = Tank.tank4;
+                            break;
+                        case 1:
+                            this.image = Tank.tank41;
+                            break;
+                        case 2:
+                            this.image = Tank.tank42;
+                            break;
+                        case 3:
+                            this.image = Tank.tank43;
+                            break;
+                    }
+                    break;
+                case "P4":
+                    switch (direction)
+                    {
+                        case 0:
+                            this.image = Tank.tank5;
+                            break;
+                        case 1:
+                            this.image = Tank.tank51;
+                            break;
+                        case 2:
+                            this.image = Tank.tank52;
+                            break;
+                        case 3:
+                            this.image = Tank.tank53;
+                            break;
+                    }
+                    break;
+                default:
+                    this.image = null;
+                    break;
+            }
+        }    
+        
+        public bool MoveNorth()
+        {
+            //0
+            if(direction == 0)
+            {
+                if (this.y_cordinate > 0)
+                {
+                    if(Arena.obj_map[x_cordinate,y_cordinate-1].type == Type.FLOOR)
+                    {
+                        this.y_cordinate -= 1;
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                setDirection(0);
+            }
+            return false;
+        }          
+        
+        public bool MoveEast()
+        {
+            //1
+            if(direction == 1)
+            {
+                if(x_cordinate< Arena.size-1)
+                {
+                    if (Arena.obj_map[x_cordinate + 1, y_cordinate].type == Type.FLOOR)
+                    {
+                        x_cordinate += 1;
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                setDirection(1);
+            }
+            return false;
+        }       
+        
+        public bool MoveSouth()
+        {
+            //2
+            if(direction == 2)
+            {
+                if(y_cordinate < Arena.size - 1)
+                {
+                    if (Arena.obj_map[x_cordinate, y_cordinate + 1].type == Type.FLOOR)
+                    {
+                        y_cordinate += 1;
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                setDirection(2);
+            }
+            return false;
+        }     
+        
+        public bool MoveWest()
+        {
+            //3
+            if(direction == 3)
+            {
+                if(x_cordinate > 0)
+                {
+                    if (Arena.obj_map[x_cordinate - 1, y_cordinate].type == Type.FLOOR)
+                    {
+                        x_cordinate -= 1;
+                        return true;
+                    }
+                }
+            }
+            else
+            {
+                setDirection(3);
+            }
+            return false;
+        }                                                   
     }
 }

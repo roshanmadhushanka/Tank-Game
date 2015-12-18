@@ -1,0 +1,9 @@
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\Tank.dll
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\Tank.pdb
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\TANKiClient.exe
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\TANKiClient.pdb
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\obj\Debug\Tank.csprojResolveAssemblyReference.cache
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\obj\Debug\Tank.dll
+C:\Users\Roshan\Documents\Visual Studio 2015\Projects\TANKiClient\Tank\obj\Debug\Tank.pdb

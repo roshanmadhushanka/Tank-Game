@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TANKiClient.Model;
 
 namespace TANKiClient
 {
-    class Decoder
+    class Decoder : Form
     {
         public static void Decode(string str) {
             string[] lines = Regex.Split(str.Substring(0, str.Length - 1), ":");
@@ -26,6 +27,7 @@ namespace TANKiClient
             {
                 //Initialize
                 string player_name = lines[1];
+                Tank.current_player_name = player_name;
                 //lines[2] - Brick
                 string[] bricks = Regex.Split(lines[2], ";");
                 for (int i = 0; i < bricks.Length; i++)
@@ -57,9 +59,19 @@ namespace TANKiClient
                 {
                     for (int y = 0; y < 10; y++)
                     {
-                        if (Arena.obj_map[x, y].type == Model.Type.TANK || Arena.obj_map[x, y].type == Model.Type.BRICK)
+                        if (Arena.obj_map[x, y].type == Model.Type.TANK || Arena.obj_map[x, y].type == Model.Type.BRICK || Arena.obj_map[x, y].type == Model.Type.FLOOR)
                         {
                             Arena.obj_map[x, y] = new Floor(x, y);
+                        }
+                        if(Arena.obj_map[x, y].type == Model.Type.COIN)
+                        {
+                            Coin c = (Coin)Arena.obj_map[x, y];
+                            c.Update();
+                        }
+                        if (Arena.obj_map[x, y].type == Model.Type.LIFE)
+                        {
+                            Life l = (Life)Arena.obj_map[x, y];
+                            l.Update();
                         }
                     }
                 }
@@ -73,7 +85,9 @@ namespace TANKiClient
                     else if (lines[i].StartsWith("P"))
                     {
                         string[] player = Regex.Split(lines[i], ";");
-                        Tank t = new Tank(player[0], Int32.Parse(player[2]));
+                        //Tank t = new Tank(player[0], Int32.Parse(player[2]));
+                        Tank t = Tank.getTank(player[0]);
+                        t.setDirection(Int32.Parse(player[2]));
                         string[] cord = Regex.Split(player[1], ",");
                         t.x_cordinate = Int32.Parse(cord[0]);
                         t.y_cordinate = Int32.Parse(cord[1]);
@@ -85,6 +99,7 @@ namespace TANKiClient
                     }
                     else
                     {
+                        //Brick wall updates
                         string[] walls = Regex.Split(lines[i], ";");
                         for (int j = 0; j < walls.Length; j++)
                         {
@@ -97,6 +112,24 @@ namespace TANKiClient
                         }
                     }
                 }
+            }else if (lines[0].StartsWith("C"))
+            {
+                string[] cord = Regex.Split(lines[1], ",");
+                Coin c = new Coin(Int32.Parse(cord[0]), Int32.Parse(cord[1]), Int32.Parse(lines[2]), Int32.Parse(lines[3]));
+                Arena.AddGameObject(c.x_cordinate, c.y_cordinate, c);
+            }else if (lines[0].StartsWith("L"))
+            {
+                string[] cord = Regex.Split(lines[1], ",");
+                Life l = new Life(Int32.Parse(cord[0]) , Int32.Parse(cord[1]), Int32.Parse(lines[2]));
+                Arena.AddGameObject(l.x_cordinate, l.y_cordinate, l);
+            }else if (lines[0].Equals("TOO_QUICK#"))
+            {
+                return;
+            }
+            Arena.UpdateArena();
+            if (AI.ai_status)
+            {
+                AI.run();
             }
             Arena.UpdateArena();
         }

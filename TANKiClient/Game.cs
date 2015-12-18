@@ -21,11 +21,10 @@ namespace TANKiClient
     {
         private static Game form = null;
         private GameClient client;
+        
         private Hashtable map = new Hashtable();
         Arena arena;
-        
-        //Images
-       
+      
 
         public Game()
         {
@@ -186,13 +185,34 @@ namespace TANKiClient
                 if (lines[0].StartsWith("I"))
                 {
                     //Game initilizing
-
+                    string name = lines[1].Substring(0, 2);
+                    lblMessage.Text = "Player : " + name;
+                    // MessageBox.Show(name)
+                    switch (name)
+                    {
+                        case "P0":
+                            picCurrent.Image = Tank.tank1;
+                            break;
+                        case "P1":
+                            picCurrent.Image = Tank.tank2;
+                            break;
+                        case "P2":
+                            picCurrent.Image = Tank.tank3;
+                            break;
+                        case "P3":
+                            picCurrent.Image = Tank.tank4;
+                            break;
+                        case "P4":
+                            picCurrent.Image = Tank.tank4;
+                            break;
+                    }
+                    
                 }
 
                 if (lines[0].StartsWith("S"))
                 {
                     //Set player name
-                    lblMessage.Text = "Player : " + lines[1].Substring(0, 2);
+                    
                 }
 
                 if (lines[0].StartsWith("G"))
@@ -212,7 +232,7 @@ namespace TANKiClient
 
         private void Game_Load(object sender, EventArgs e)
         {
-            
+            AI.ai_status = false;
         }
 
         private void Game_KeyPress(object sender, KeyPressEventArgs e)
@@ -228,21 +248,37 @@ namespace TANKiClient
         private void btnUp_Click(object sender, EventArgs e)
         {
             client.SendToServer("UP#");
+            //Arena.ClearArena();
+            //Tank.getTank("P0").MoveNorth();
+            //Arena.AddGameObject(Tank.getTank("P0").x_cordinate, Tank.getTank("P0").y_cordinate, Tank.getTank("P0"));
+            //Arena.UpdateArena();
         }
 
         private void btnRight_Click(object sender, EventArgs e)
         {
             client.SendToServer("RIGHT#");
+            //Arena.ClearArena();
+            //Tank.getTank("P0").MoveEast();
+            //Arena.AddGameObject(Tank.getTank("P0").x_cordinate, Tank.getTank("P0").y_cordinate, Tank.getTank("P0"));
+            //Arena.UpdateArena();
         }
 
         private void btnDown_Click(object sender, EventArgs e)
         {
             client.SendToServer("DOWN#");
+            //Arena.ClearArena();
+            //Tank.getTank("P0").MoveSouth();
+            //Arena.AddGameObject(Tank.getTank("P0").x_cordinate, Tank.getTank("P0").y_cordinate, Tank.getTank("P0"));
+            //Arena.UpdateArena();
         }
 
         private void btnLeft_Click(object sender, EventArgs e)
         {
             client.SendToServer("LEFT#");
+            //Arena.ClearArena();
+            //Tank.getTank("P0").MoveWest();
+            //Arena.AddGameObject(Tank.getTank("P0").x_cordinate, Tank.getTank("P0").y_cordinate, Tank.getTank("P0"));
+            //Arena.UpdateArena();
         }
 
         private void btnShoot_Click(object sender, EventArgs e)
@@ -254,18 +290,56 @@ namespace TANKiClient
         {
             client.ip = txtIPAddress.Text;
             client.SendToServer("JOIN#");
+            AI.gameClient = client;
         }
 
         private void btnDisconnect_Click(object sender, EventArgs e)
         {
-            Decoder.Decode("G:P0;0,0;0;0;100;0;0:P1;0,9;0;0;100;0;0:P2;9,0;0;0;100;0;0:P3;9,9;0;0;100;0;0:3,1,0;5,8,0;8,7,0;0,4,0;2,6,0;4,8,0;1,3,0;4,3,0;6,8,0;2,4,0#");
-            //Decoder.Decode("S:P1:1,1:0#");
+            Tank.getTank("P0").x_cordinate = 2;
+            Tank.getTank("P0").y_cordinate = 1;
+            Arena.AddGameObject(2, 1, Tank.getTank("P0"));
             Arena.UpdateArena();
+            //Decoder.Decode("L:0,1:19207#");
+            //Decoder.Decode("S:P1:1,1:0#");
+            //Arena.UpdateArena();
         }
 
         private void c69_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void rchGameStat_TextChanged(object sender, EventArgs e)
+        {
+            rchGameStat.SelectionStart = rchGameStat.Text.Length;
+            rchGameStat.ScrollToCaret();
+        }
+
+        private void btnAI_Click(object sender, EventArgs e)
+        {
+            if(AI.ai_status == false)
+            {
+                AI.ai_status = true;
+                btnAI.Text = "Disable AI";
+                btnUp.Enabled = false;
+                btnDown.Enabled = false;
+                btnLeft.Enabled = false;
+                btnRight.Enabled = false;
+            }
+            else
+            {
+                AI.ai_status = false;
+                btnAI.Text = "Activate AI";
+                btnUp.Enabled = true;
+                btnDown.Enabled = true;
+                btnLeft.Enabled = true;
+                btnRight.Enabled = true;
+            }
+        }
+
+        public void updateGameDetails()
+        {
+            lblScore.Text = Tank.getTank(Tank.current_player_name).coins.ToString();
         }
     }
 }
